@@ -1,27 +1,41 @@
-# Parcial Robótica — Gran Reto JetCobot
+# Pregunta 1 — Servicio de interpretación de órdenes
 
-Repositorio del equipo para el Examen Parcial de Robótica 08079.
+Esta carpeta contiene todo lo necesario para la Pregunta 1 del Gran Reto JetCobot.
 
 ## Estructura
 
-- `src/arm_broker`: broker reutilizado del RB-2.
-- `src/arm_broker_interfaces`: acción, estado de cola y servicio `InterpretarOrden`.
-- `src/interprete_ordenes`: nodo ROS 2 de la Pregunta 1, cliente LAYA, fallback por keywords y medidor.
-- `evidencias/pregunta1`: conjunto de 50 frases y resultados del escenario en calma.
-- `scripts/generar_figuras_p1.py`: genera las gráficas comparativas desde el CSV de resultados.
+```text
+Pregunta1/
+├── src/
+│   ├── arm_broker/
+│   ├── arm_broker_interfaces/
+│   └── interprete_ordenes/
+├── evidencias/
+│   ├── frases_50.csv
+│   ├── resultados_calma.csv
+│   └── resultados_calma_resumen.txt
+├── scripts/
+│   └── generar_figuras_p1.py
+└── README.md
+```
+
+- `arm_broker`: broker reutilizado del RB-2.
+- `arm_broker_interfaces`: incluye `MoveArm.action`, `QueueState.msg` e `InterpretarOrden.srv`.
+- `interprete_ordenes`: nodo ROS 2 que expone `/interpretar_orden`, consulta LAYA y usa keywords como respaldo.
+- `evidencias`: dataset y resultados medidos.
+- `scripts`: generación de figuras comparativas.
 
 ## Compilación
 
+Desde la raíz del repositorio:
+
 ```bash
-cd ~/ros2_ws
 source /opt/ros/humble/setup.bash
-colcon build
+colcon build --base-paths Preguntas/Pregunta1/src
 source install/setup.bash
 ```
 
 ## Ejecutar el intérprete
-
-El servidor LAYA se configura mediante parámetro. No se guarda ninguna clave API en este repositorio.
 
 ```bash
 ros2 run interprete_ordenes interprete --ros-args \
@@ -29,19 +43,21 @@ ros2 run interprete_ordenes interprete --ros-args \
   -p timeout_laya_s:=2.0
 ```
 
-## Medición de P1
+## Ejecutar la medición en calma
 
 ```bash
 python3 -m interprete_ordenes.medir_p1 \
-  evidencias/pregunta1/frases_50.csv \
-  evidencias/pregunta1/resultados_calma.csv \
+  Preguntas/Pregunta1/evidencias/frases_50.csv \
+  Preguntas/Pregunta1/evidencias/resultados_calma.csv \
   calma
 ```
 
-## Figuras
+## Generar figuras
 
 ```bash
-python3 scripts/generar_figuras_p1.py evidencias/pregunta1/resultados_calma.csv
+python3 Preguntas/Pregunta1/scripts/generar_figuras_p1.py \
+  Preguntas/Pregunta1/evidencias/resultados_calma.csv
 ```
 
-Pendiente para completar P1: repetir las mismas 50 frases en el escenario bajo carga y guardar el CSV/resumen correspondiente.
+Pendiente: repetir las mismas 50 frases bajo carga para obtener la comparación
+final entre los escenarios **calma** y **carga**.
