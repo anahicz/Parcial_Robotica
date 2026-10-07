@@ -1,0 +1,13 @@
+build/
+install/
+log/
+
+__pycache__/
+*.pyc
+*.pyo
+
+*.bak
+*.bak_*
+*.backup
+*.backup_*
+*.before_*
