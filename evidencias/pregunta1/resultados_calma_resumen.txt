@@ -1,0 +1,39 @@
+========================================
+RESUMEN P1 - INTERPRETACIÓN DE ÓRDENES
+========================================
+Escenario: calma
+Frases totales: 50
+Respuestas LAYA válidas: 50/50
+
+Exactitud total LAYA: 34.00%
+Exactitud total keywords: 78.00%
+
+Exactitud LAYA por campo:
+  accion: 80.00%
+  objeto: 100.00%
+  color: 98.00%
+  prioridad: 64.00%
+  permitido: 62.00%
+
+Exactitud keywords por campo:
+  accion: 96.00%
+  objeto: 100.00%
+  color: 90.00%
+  prioridad: 90.00%
+  permitido: 100.00%
+
+Latencia servicio ROS:
+  Mediana: 113.42 ms
+  P95: 160.61 ms
+
+Latencia HTTP LAYA:
+  Mediana: 105.23 ms
+  P95: 152.19 ms
+
+Tiempo servidor LAYA:
+  Mediana: 96.41 ms
+  P95: 129.06 ms
+
+Red/resto estimado:
+  Mediana: 9.06 ms
+  P95: 13.68 ms
