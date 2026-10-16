@@ -52,6 +52,6 @@ Parcial_Robotica/
 
 ## Importante
 
-La Pregunta 2 se depuró para dejar solo lo usado directamente por el ejecutable `pick_place.py`, junto con documentación y plantilla de configuración. **Aún no están disponibles** los archivos pedidos `parche_altura_deposito.py` y `parche_seguir.py`. La implementación anterior completa está preservada en la [rama de respaldo](../../tree/respaldo-pregunta2-previo-limpieza-20261016). La Pregunta 1 no se ha modificado.
+La Pregunta 2 se depuró para dejar solo lo usado directamente por el ejecutable `pick_place.py`, junto con documentación y plantilla de configuración. **Aún no están disponibles** los archivos pedidos `parche_altura_deposito.py` y `parche_seguir.py`. La implementación anterior completa está preservada en la [rama de respaldo](https://github.com/anahicz/Parcial_Robotica/tree/respaldo-pregunta2-previo-limpieza-20261016/Preguntas/Pregunta2). La Pregunta 1 no se ha modificado.
 
 No publicar `config.json`, `calibracion.json`, credenciales ni logs locales. Los resultados de simulación no certifican movimiento físico.
