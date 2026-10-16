@@ -1,15 +1,16 @@
 # ==============================================================================
 # UNIVERSIDAD ESAN
-# ROBOTICA 08079
+# ROBÓTICA S-003
 # EXAMEN PARCIAL - GRAN RETO JETCOBOT
 # Grupo 7
 #
 # Integrantes:
-# - Sebastian Pedro Aguirre Acosta
-# - Anahi Cortez Chinchay
-# - Ramirez Quevedo Karen Noelia
-# - Vara Vargas Valentino Uziel
-#
+#   - Sebastian Pedro Aguirre Acosta
+#   - Anahi Cortez Chinchay
+#   - Ramirez Quevedo Karen Noelia
+#   - Vara Vargas Valentino Uziel
+# ==============================================================================
+
 # Archivo: broker_p2_sim.py
 # Descripcion: Integracion logica de la Pregunta 2.
 # No publica movimientos ni controla hardware.
