@@ -1,6 +1,21 @@
 # Parcial Robótica — Gran Reto JetCobot
 
-Repositorio del equipo para el Examen Parcial de Robótica 08079, organizado por preguntas.
+```text
+# ==============================================================================
+# UNIVERSIDAD ESAN
+# ROBÓTICA S-003
+# EXAMEN PARCIAL - GRAN RETO JETCOBOT
+# Grupo 7
+#
+# Integrantes:
+#   - Sebastian Pedro Aguirre Acosta
+#   - Anahi Cortez Chinchay
+#   - Ramirez Quevedo Karen Noelia
+#   - Vara Vargas Valentino Uziel
+# ==============================================================================
+```
+
+Repositorio del equipo para el Examen Parcial de Robótica S-003, organizado por preguntas.
 
 ## Estado general
 
