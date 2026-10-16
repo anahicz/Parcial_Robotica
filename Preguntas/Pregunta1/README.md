@@ -1,5 +1,20 @@
 # Pregunta 1 — Servicio de interpretación de órdenes
 
+```text
+# ==============================================================================
+# UNIVERSIDAD ESAN
+# ROBÓTICA S-003
+# EXAMEN PARCIAL - GRAN RETO JETCOBOT
+# Grupo 7
+#
+# Integrantes:
+#   - Sebastian Pedro Aguirre Acosta
+#   - Anahi Cortez Chinchay
+#   - Ramirez Quevedo Karen Noelia
+#   - Vara Vargas Valentino Uziel
+# ==============================================================================
+```
+
 Esta carpeta contiene todo lo necesario para la Pregunta 1 del Gran Reto JetCobot.
 
 ## Estructura
