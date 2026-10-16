@@ -23,7 +23,7 @@ Parcial_Robotica/
 │   ├── Pregunta2/
 │   │   ├── src/              # ROS 2 P2 y broker simulado existente
 │   │   ├── scripts/
-│   │   ├── jetcobot/         # Fuentes adicionales del ZIP, cuando estén incorporadas
+│   │   ├── jetcobot/         # Fuentes adicionales incorporadas desde el ZIP
 │   │   └── README.md
 │   └── Pregunta3/
 │       └── README.md
