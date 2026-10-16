@@ -1,12 +1,12 @@
 # JetCobot - Control Autónomo de Brazo Robótico
 
-**Proyecto** para Henry: Sistema completo de recogida y depósito de cubos de colores usando el brazo **myCoBot 280** en Jetson, con detección visual por HSV y mapeo de píxeles a coordenadas del robot mediante homografía.
+**Proyecto del equipo: Sistema completo de recogida y depósito de cubos de colores usando el brazo **myCoBot 280** en Jetson, con detección visual por HSV y mapeo de píxeles a coordenadas del robot mediante homografía.
 
 
 > ## ▶ Uso desde Jupyter (recomendado en el JetCobot)
-> 1. En Jupyter: **Upload** → `henry_jetcobot.zip` a tu carpeta personal.
-> 2. Abrí una terminal de Jupyter o una celda y ejecutá: `!unzip -o ~/henry_jetcobot.zip -d ~`
-> 3. Abrí `henry_jetcobot/JetCobot_Jupyter.ipynb` y ejecutá las celdas **en orden** con Shift+Enter.
+> 1. En Jupyter: **Upload** → `jetcobot.zip` a tu carpeta personal.
+> 2. Abrí una terminal de Jupyter o una celda y ejecutá: `!unzip -o ~/jetcobot.zip -d ~`
+> 3. Abrí `jetcobot/JetCobot_Jupyter.ipynb` y ejecutá las celdas **en orden** con Shift+Enter.
 > 4. Primero con `SIMULAR = True`, después con `False`. Todo el flujo (mesa, calibración, un color, ciclo) está ahí.
 >
 > La calibración por consola (`--calibrar`) abre una ventana de OpenCV y **no funciona dentro de Jupyter**: usá el paso 5 del cuaderno.
@@ -50,7 +50,7 @@
 ### 1. Crea un entorno virtual
 
 ```bash
-cd /ruta/a/henry_jetcobot
+cd /ruta/a/jetcobot
 python3 -m venv venv
 source venv/bin/activate
 ```
@@ -84,7 +84,7 @@ ls -la /dev/ttyUSB*
 ## Estructura del Proyecto
 
 ```
-henry_jetcobot/
+jetcobot/
 ├── config.json                 # Configuración (posiciones, HSV, límites)
 ├── calibracion.json            # Homografía (generada)
 ├── intentos.csv                # Log de intentos (generado)
@@ -236,7 +236,7 @@ Esto se usa en pick_place para saber dónde alcanzar cada cubo.
 
 ## Ejecución
 
-### Flujo Recomendado para Henry
+### Flujo recomendado de ejecución
 
 #### Día 1: Verificación
 ```bash
@@ -589,9 +589,9 @@ Este proyecto es para **fines educativos**.
 
 ---
 
-## Autor
+## Contexto académico
 
-Escrito para **Henry** como desafío de control robótico autónomo.
+Material académico del equipo para el proyecto de control robótico autónomo.
 
 ---
 
@@ -619,4 +619,4 @@ R: Vuelve a calibrar: `python3 pick_place.py --calibrar`.
 
 **Última actualización**: octubre 2026  
 **Versión**: 1.0  
-**Estado**: Listo para el curso
+**Estado**: Integración parcial; pendientes las validaciones del flujo físico y de ROS 2/LAYA
