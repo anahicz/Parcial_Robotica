@@ -33,11 +33,14 @@ Se mantiene **solo el núcleo necesario** para el programa independiente `pick_p
 
 La dependencia directa de `pick_place.py` se verificó: importa `robot`, `vision` y `calibration`; no importa los archivos históricos eliminados. No se incorporan módulos innecesarios para su ejecución autónoma.
 
-## Parches pendientes de recibir
+## Parches recibidos, sin aplicar
 
-Se solicitaron **`parche_altura_deposito.py` y `parche_seguir.py`** (o `parche_seguir_pick_and_place.py`), pero **no están presentes** en el repositorio revisado ni en el ZIP entregado. No se han inventado ni sustituido por parches antiguos. Cuando se proporcionen, será necesario comprobar su compatibilidad con `pick_place.py` antes de aplicarlos.
+Se incorporaron los archivos originales de trabajo, con firma del Grupo 7, en [`jetcobot/parches_pendientes/`](jetcobot/parches_pendientes/):
 
-Los antiguos `parche_levante.py` y `parche_reenvio.py` se retiraron: son scripts de modificación históricos, no dependencias importadas en tiempo de ejecución, y volver a aplicarlos podría alterar el código que ya tenía esos cambios.
+- `parche_altura_deposito.pyw`: necesita adaptar su búsqueda de texto antes de poder parchear el `pick_place.py` actual.
+- `parche_seguir.pyw`: requiere corregir su lógica de control de errores; puede notificar falsamente que un movimiento terminó correctamente y activa `continue_on_error`.
+
+**No se ejecutaron ni se aplicaron los parches**. El código operativo `pick_place.py`, `robot.py`, `vision.py` y `calibration.py` permanece sin modificaciones.
 
 ## Comprobación sin mover el brazo
 

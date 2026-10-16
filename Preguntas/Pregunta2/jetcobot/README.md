@@ -54,8 +54,15 @@ python3 pick_place.py --simular --estado
 
 Si ya existe `config.json`, **no ejecutar la instrucción `cp`**. El archivo de ejemplo no sustituye la calibración física.
 
-### Parches pendientes
+### Parches recibidos (todavía no aplicados)
 
-Se espera recibir `parche_altura_deposito.py` y `parche_seguir.py` (nombre exacto por confirmar). No figuran en el ZIP ni en el repositorio; por ello no están incluidos aquí. Los antiguos parches `parche_levante.py` y `parche_reenvio.py` se retiraron para evitar su reaplicación accidental. El programa de `pick_place.py` conserva su implementación anterior hasta que se verifique la nueva.
+Los dos archivos entregados están en [`parches_pendientes/`](parches_pendientes/):
+
+- `parche_altura_deposito.pyw`: incompatible con una de las cadenas esperadas por el parche para el código actual.
+- `parche_seguir.pyw`: contiene lógica de continuación que puede ocultar un movimiento fallido y activar `continue_on_error`.
+
+Son archivos de referencia. **No se ejecutaron y no se modificaron `pick_place.py`, `robot.py` ni `config.json`** con su contenido.
+
+
 
 Los archivos de simulación ROS 2 y las herramientas auxiliares anteriores están en la rama de respaldo `respaldo-pregunta2-previo-limpieza-20261016`. Para ejecutar el intérprete ROS 2 y LAYA, consultar la Pregunta 1, que se mantiene separada.
