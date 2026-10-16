@@ -1,5 +1,20 @@
 # Pregunta 2 — Visión, calibración y pick-and-place (integración parcial)
 
+```text
+# ==============================================================================
+# UNIVERSIDAD ESAN
+# ROBÓTICA S-003
+# EXAMEN PARCIAL - GRAN RETO JETCOBOT
+# Grupo 7
+#
+# Integrantes:
+#   - Sebastian Pedro Aguirre Acosta
+#   - Anahi Cortez Chinchay
+#   - Ramirez Quevedo Karen Noelia
+#   - Vara Vargas Valentino Uziel
+# ==============================================================================
+```
+
 > **Estado: implementación parcial / prototipo verificado por pruebas de software.** No se ha certificado aquí la secuencia completa en el JetCobot físico.
 
 ## Componentes existentes en el repositorio

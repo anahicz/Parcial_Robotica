@@ -1,6 +1,6 @@
 # ==============================================================================
 # UNIVERSIDAD ESAN
-# ROBÓTICA 08079
+# ROBÓTICA S-003
 # EXAMEN PARCIAL - GRAN RETO JETCOBOT
 # Grupo 7
 #
@@ -9,7 +9,8 @@
 #   - Anahi Cortez Chinchay
 #   - Ramirez Quevedo Karen Noelia
 #   - Vara Vargas Valentino Uziel
-#
+# ==============================================================================
+
 # Archivo: interprete_ordenes.py
 # Descripción:
 #   Nodo ROS 2 encargado de exponer el servicio /interpretar_orden.

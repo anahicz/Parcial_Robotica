@@ -1,6 +1,6 @@
 # ==============================================================================
 # UNIVERSIDAD ESAN
-# ROBÓTICA 08079
+# ROBÓTICA S-003
 # EXAMEN PARCIAL - GRAN RETO JETCOBOT
 # Grupo 7
 #
@@ -9,7 +9,8 @@
 #   - Anahi Cortez Chinchay
 #   - Ramirez Quevedo Karen Noelia
 #   - Vara Vargas Valentino Uziel
-#
+# ==============================================================================
+
 # Archivo: medir_p1.py
 # Descripción:
 #   Ejecuta el conjunto de frases de P1 mediante /interpretar_orden,
