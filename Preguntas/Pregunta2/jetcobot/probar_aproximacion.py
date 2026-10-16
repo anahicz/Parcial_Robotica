@@ -1,3 +1,16 @@
+# ==============================================================================
+# UNIVERSIDAD ESAN
+# ROBÓTICA S-003
+# EXAMEN PARCIAL - GRAN RETO JETCOBOT
+# Grupo 7
+#
+# Integrantes:
+#   - Sebastian Pedro Aguirre Acosta
+#   - Anahi Cortez Chinchay
+#   - Ramirez Quevedo Karen Noelia
+#   - Vara Vargas Valentino Uziel
+# ==============================================================================
+
 """Lleva la pinza a 8 cm SOBRE un cubo, ALINEADA con el giro del cubo, y se QUEDA ahi (no baja ni agarra).
 
 Uso:  python3 probar_aproximacion.py rojo          (giro automatico: base + giro del cubo)

@@ -1,3 +1,16 @@
+# ==============================================================================
+# UNIVERSIDAD ESAN
+# ROBÓTICA S-003
+# EXAMEN PARCIAL - GRAN RETO JETCOBOT
+# Grupo 7
+#
+# Integrantes:
+#   - Sebastian Pedro Aguirre Acosta
+#   - Anahi Cortez Chinchay
+#   - Ramirez Quevedo Karen Noelia
+#   - Vara Vargas Valentino Uziel
+# ==============================================================================
+
 """Prueba a qué alturas acepta ir el brazo sobre un punto de la mesa (SIN cubo en la pinza).
 
 Uso:  python3 probar_alcance.py                 (por defecto: donde estaba el azul)

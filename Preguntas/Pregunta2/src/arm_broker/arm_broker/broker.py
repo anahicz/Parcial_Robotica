@@ -1,3 +1,16 @@
+# ==============================================================================
+# UNIVERSIDAD ESAN
+# ROBÓTICA S-003
+# EXAMEN PARCIAL - GRAN RETO JETCOBOT
+# Grupo 7
+#
+# Integrantes:
+#   - Sebastian Pedro Aguirre Acosta
+#   - Anahi Cortez Chinchay
+#   - Ramirez Quevedo Karen Noelia
+#   - Vara Vargas Valentino Uziel
+# ==============================================================================
+
 """arm_broker — el único nodo que publica en /joint_states.
 
 Andamiaje entregado por el curso. Los bloques IMPLEMENTAR son lo que evalúa el

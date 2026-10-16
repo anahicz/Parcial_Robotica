@@ -1,6 +1,6 @@
 # ==============================================================================
 # UNIVERSIDAD ESAN
-# ROBOTICA 08079
+# ROBÓTICA S-003
 # EXAMEN PARCIAL - GRAN RETO JETCOBOT
 # Grupo 7
 #
@@ -9,7 +9,8 @@
 #   - Anahi Cortez Chinchay
 #   - Ramirez Quevedo Karen Noelia
 #   - Vara Vargas Valentino Uziel
-#
+# ==============================================================================
+
 # Archivo: probar_politicas.py
 # Descripcion: Prueba aislada de FIFO y prioridad con envejecimiento.
 # No utiliza ROS 2 ni publica comandos de movimiento.
