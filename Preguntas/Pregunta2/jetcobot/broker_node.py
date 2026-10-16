@@ -1,4 +1,17 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# UNIVERSIDAD ESAN
+# ROBÓTICA S-003
+# EXAMEN PARCIAL - GRAN RETO JETCOBOT
+# Grupo 7
+#
+# Integrantes:
+#   - Sebastian Pedro Aguirre Acosta
+#   - Anahi Cortez Chinchay
+#   - Ramirez Quevedo Karen Noelia
+#   - Vara Vargas Valentino Uziel
+# ==============================================================================
+
 """
 Nodo ROS 2 broker con cola de prioridad para órdenes de agarre.
 Expone:

@@ -1,6 +1,21 @@
 # JetCobot - Control Autónomo de Brazo Robótico
 
-**Proyecto del equipo: Sistema completo de recogida y depósito de cubos de colores usando el brazo **myCoBot 280** en Jetson, con detección visual por HSV y mapeo de píxeles a coordenadas del robot mediante homografía.
+```text
+# ==============================================================================
+# UNIVERSIDAD ESAN
+# ROBÓTICA S-003
+# EXAMEN PARCIAL - GRAN RETO JETCOBOT
+# Grupo 7
+#
+# Integrantes:
+#   - Sebastian Pedro Aguirre Acosta
+#   - Anahi Cortez Chinchay
+#   - Ramirez Quevedo Karen Noelia
+#   - Vara Vargas Valentino Uziel
+# ==============================================================================
+```
+
+**Proyecto del equipo:** Sistema completo de recogida y depósito de cubos de colores usando el brazo **myCoBot 280** en Jetson, con detección visual por HSV y mapeo de píxeles a coordenadas del robot mediante homografía.
 
 
 > ## ▶ Uso desde Jupyter (recomendado en el JetCobot)

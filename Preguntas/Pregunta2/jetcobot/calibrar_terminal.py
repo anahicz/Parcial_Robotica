@@ -1,3 +1,16 @@
+# ==============================================================================
+# UNIVERSIDAD ESAN
+# ROBÓTICA S-003
+# EXAMEN PARCIAL - GRAN RETO JETCOBOT
+# Grupo 7
+#
+# Integrantes:
+#   - Sebastian Pedro Aguirre Acosta
+#   - Anahi Cortez Chinchay
+#   - Ramirez Quevedo Karen Noelia
+#   - Vara Vargas Valentino Uziel
+# ==============================================================================
+
 """Mide la mesa y calibra camara->robot desde la TERMINAL (sin ventanas graficas).
 
 Uso:  python3 calibrar_terminal.py            (robot real; el brazo debe estar en OBSERVACION)
