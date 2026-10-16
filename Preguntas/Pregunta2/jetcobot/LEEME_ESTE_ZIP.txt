@@ -1,0 +1,13 @@
+JetCobot - estado al 16-oct (antes del parche de radio de transito)
+
+Parches incluidos: CICLO, DEPOSITO, DEPOSITO2, GIRO, LEVANTE, OFFSET (pick_place.py)
+                   REENVIO, TOLERANCIA, TOLERANCIA2 (robot.py)
+NO incluye: PARCHE_RADIO (el del ultimo mensaje).
+
+IMPORTANTE: este zip NO trae config.json ni calibracion.json.
+Conserva los TUYOS (tienen tu mesa, tu deposito y tu calibracion de 11 puntos).
+config_ejemplo.json es solo referencia con valores por defecto.
+
+Herramientas: ajustar_calibracion.py, probar_alcance.py, medir_offset.py,
+calibrar_comandos.py, calibrar_rondas.py, parche_*.py (ya aplicados aqui).
+Pruebas: python3 -m unittest discover -s tests   (41 OK)

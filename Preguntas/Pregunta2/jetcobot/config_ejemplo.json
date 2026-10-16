@@ -1,0 +1,252 @@
+{
+  "robot": {
+    "serial_port": "/dev/ttyUSB0",
+    "baudrate": 1000000,
+    "timeout": 5
+  },
+  "camera": {
+    "device": "/dev/video0",
+    "width": 640,
+    "height": 480,
+    "fps": 30
+  },
+  "poses": {
+    "home": {
+      "angles": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -45
+      ],
+      "description": "Posición de inicio segura"
+    },
+    "observation": {
+      "angles": [
+        13.53,
+        27.5,
+        -53.48,
+        -47.1,
+        0.52,
+        -29.26
+      ],
+      "description": "Posición para observar los 4 cubos"
+    }
+  },
+  "deposits": {
+    "rojo": {
+      "coords": [
+        83.7,
+        229.9,
+        140.5,
+        -175.67,
+        -3.37,
+        39.54
+      ],
+      "description": "Zona de depósito para cubo rojo"
+    },
+    "azul": {
+      "coords": [
+        -52.9,
+        224.4,
+        126.1,
+        176.81,
+        1.13,
+        40.11
+      ],
+      "description": "Zona de depósito para cubo azul"
+    },
+    "amarillo": {
+      "coords": [
+        154.6,
+        223.3,
+        140.8,
+        179.68,
+        5.08,
+        43.85
+      ],
+      "description": "Zona de depósito para cubo amarillo"
+    },
+    "verde": {
+      "coords": [
+        18.5,
+        229.8,
+        126.1,
+        177.58,
+        2.39,
+        45.81
+      ],
+      "description": "Zona de depósito para cubo verde"
+    }
+  },
+  "motion": {
+    "default_speed": 20,
+    "speeds": {
+      "lento": 10,
+      "normal": 20,
+      "rapido": 50
+    },
+    "approach_height_mm": 80,
+    "grasp_height_mm": 10,
+    "step_descent_mm": 10,
+    "tolerance_joints_deg": 2.5,
+    "tolerance_coords_mm": 8,
+    "workspace": {
+      "reach_max_mm": 280,
+      "z_min_mm": 90,
+      "z_max_mm": 400,
+      "orientation_limit_deg": 180,
+      "description": "reach_max_mm: radial reach sqrt(x²+y²); z_min_mm: MEASURED table height, must be taught; z_max_mm: upper bound"
+    },
+    "motion_start_window_s": 1.5,
+    "description_motion_start": "After sending move command, wait up to 1.5s for is_moving() to become True OR pose to change (race condition fix)",
+    "approach_height_mm_description": "Altura de aproximación SOBRE la mesa (se suma a z_min_mm)",
+    "grasp_height_mm_description": "Altura de agarre SOBRE la mesa (se suma a z_min_mm); ajustala a la mitad del alto del cubo",
+    "tolerance_z_mm": 15,
+    "grasp_rz_deg": -45,
+    "transit_height_mm": 120,
+    "transit_tolerance_mm": 20,
+    "auto_rz": true,
+    "grasp_rz_sign": 1,
+    "grasp_offset_mm": [
+      0.0,
+      0.0
+    ]
+  },
+  "gripper": {
+    "open_value": 100,
+    "close_value": 20,
+    "gripper_speed": 30
+  },
+  "vision": {
+    "detection_interval_s": 5,
+    "stability_frames": 4,
+    "pixel_tolerance": 6,
+    "min_area_px2": 300,
+    "colors": {
+      "rojo": {
+        "hsv_ranges": [
+          {
+            "lower": [
+              0,
+              100,
+              100
+            ],
+            "upper": [
+              10,
+              255,
+              255
+            ]
+          },
+          {
+            "lower": [
+              170,
+              100,
+              100
+            ],
+            "upper": [
+              180,
+              255,
+              255
+            ]
+          }
+        ],
+        "description": "Cubo rojo (dos rangos de hue)"
+      },
+      "azul": {
+        "hsv_ranges": [
+          {
+            "lower": [
+              95,
+              80,
+              60
+            ],
+            "upper": [
+              130,
+              255,
+              255
+            ]
+          }
+        ],
+        "description": "Cubo azul"
+      },
+      "amarillo": {
+        "hsv_ranges": [
+          {
+            "lower": [
+              20,
+              100,
+              100
+            ],
+            "upper": [
+              40,
+              255,
+              255
+            ]
+          }
+        ],
+        "description": "Cubo amarillo"
+      },
+      "verde": {
+        "hsv_ranges": [
+          {
+            "lower": [
+              40,
+              100,
+              100
+            ],
+            "upper": [
+              80,
+              255,
+              255
+            ]
+          }
+        ],
+        "description": "Cubo verde"
+      }
+    }
+  },
+  "joint_limits": {
+    "description": "Límites por articulación para myCobot 280",
+    "J1": {
+      "min": -165,
+      "max": 165
+    },
+    "J2": {
+      "min": -165,
+      "max": 165
+    },
+    "J3": {
+      "min": -165,
+      "max": 165
+    },
+    "J4": {
+      "min": -165,
+      "max": 165
+    },
+    "J5": {
+      "min": -165,
+      "max": 165
+    },
+    "J6": {
+      "min": -175,
+      "max": 175
+    }
+  },
+  "workflow": {
+    "color_order": [
+      "rojo",
+      "azul",
+      "amarillo",
+      "verde"
+    ],
+    "return_to_home": true,
+    "re_detect_each_cycle": true
+  },
+  "logging": {
+    "log_dir": "logs",
+    "debug_images_dir": "debug_images",
+    "csv_format": "timestamp,action,commanded_angles,read_angles,commanded_coords,read_coords,detection_color,detection_uv,status"
+  }
+}

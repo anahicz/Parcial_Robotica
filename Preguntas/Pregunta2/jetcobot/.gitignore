@@ -1,0 +1,12 @@
+# Configuración/calibración específicas del robot y del laboratorio
+config.json
+calibracion.json
+# Archivos generados
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+logs/
+intentos.csv
+*.log
+*.bak
