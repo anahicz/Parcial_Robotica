@@ -59,4 +59,4 @@ La versión anterior del ZIP superó **41 pruebas automatizadas** antes de la li
 
 ## Conservación del historial
 
-La rama [`respaldo-pregunta2-previo-limpieza-20261016`](../../tree/respaldo-pregunta2-previo-limpieza-20261016/Preguntas/Pregunta2) preserva el broker simulado, scripts, notebooks, tests y herramientas experimentales retirados de `main`. La **Pregunta 1** continúa en `Preguntas/Pregunta1`, con ROS 2, el intérprete de órdenes y LAYA, sin modificaciones por esta limpieza.
+La rama [`respaldo-pregunta2-previo-limpieza-20261016`](https://github.com/anahicz/Parcial_Robotica/tree/respaldo-pregunta2-previo-limpieza-20261016/Preguntas/Pregunta2) preserva el broker simulado, scripts, notebooks, tests y herramientas experimentales retirados de `main`. La **Pregunta 1** continúa en `Preguntas/Pregunta1`, con ROS 2, el intérprete de órdenes y LAYA, sin modificaciones por esta limpieza.
